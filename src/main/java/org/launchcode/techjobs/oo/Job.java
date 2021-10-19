@@ -2,6 +2,7 @@ package org.launchcode.techjobs.oo;
 
 import java.util.Objects;
 
+
 public class Job {
 
     private int id;
@@ -84,6 +85,42 @@ public class Job {
         return Objects.hash(getId());
     }
 
+    @Override
+    public String toString() {
+        String data = "\nID: " + id + "\n";
+
+        if (name == null){
+            data = data + "Name: Data not available\n";
+        } else {
+            data = data + "Name: " + name + "\n";
+        }
+
+        if (employer == null){
+            data = data + "Employer: Data not available\n";
+        } else {
+            data = data +"Employer: " + employer + "\n";
+        }
+
+        if (location == null){
+            data = data + "Location: Data not available\n";
+        } else {
+            data = data +"Location: " + location + "\n";
+        }
+
+        if (positionType == null){
+            data = data + "Position Type: Data not available\n";
+        } else {
+            data = data +"Position Type: " + positionType + "\n";
+        }
+
+        if (coreCompetency == null){
+            data = data + "Core Competency: Data not available\n";
+        } else {
+            data = data +"Core Competency: " + coreCompetency + "\n";
+        }
+
+        return data;
+    }
     // TODO: Add two constructors - one to initialize a unique ID and a second to initialize the
     //  other five fields. The second constructor should also call the first in order to initialize
     //  the 'id' field.
