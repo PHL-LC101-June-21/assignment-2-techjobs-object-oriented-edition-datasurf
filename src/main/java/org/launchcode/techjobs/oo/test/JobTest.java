@@ -89,6 +89,4 @@ public class JobTest {
                 "Location: Data not available\n" + "Position Type: Data not available\n" +
                 "Core Competency: Data not available\n"), result);
     }
-
-
 }

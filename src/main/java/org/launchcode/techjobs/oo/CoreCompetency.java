@@ -9,7 +9,7 @@ public class CoreCompetency {
     private String value;
 
     public CoreCompetency() {
-        this.id = nextId;
+        id = nextId;
         nextId++;
     }
 
@@ -42,9 +42,7 @@ public class CoreCompetency {
     //  ONLY a getter for the 'id' field.
 
 
-    public int getId() {
-        return id;
-    }
+    public int getId() {return id;}
 
     public String getValue() {
         return value;
