@@ -2,7 +2,6 @@ package org.launchcode.techjobs.oo;
 
 import java.util.Objects;
 
-
 public class Job {
 
     private int id;
@@ -89,31 +88,31 @@ public class Job {
     public String toString() {
         String data = "\nID: " + id + "\n";
 
-        if (name == null){
+        if ((name == null)||(name == "")){
             data = data + "Name: Data not available\n";
         } else {
             data = data + "Name: " + name + "\n";
         }
 
-        if (employer == null){
+        if ((employer == null)||(employer.getValue() == "")){
             data = data + "Employer: Data not available\n";
         } else {
             data = data +"Employer: " + employer + "\n";
         }
 
-        if (location == null){
+        if ((location == null)||(location.getValue() == "")){
             data = data + "Location: Data not available\n";
         } else {
             data = data +"Location: " + location + "\n";
         }
 
-        if (positionType == null){
+        if ((positionType == null)||(positionType.getValue() == "")){
             data = data + "Position Type: Data not available\n";
         } else {
             data = data +"Position Type: " + positionType + "\n";
         }
 
-        if (coreCompetency == null){
+        if ((coreCompetency == null)||(coreCompetency.getValue() == "")){
             data = data + "Core Competency: Data not available\n";
         } else {
             data = data +"Core Competency: " + coreCompetency + "\n";
